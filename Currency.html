@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="Currency.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+</head>
+<body>
+         <!-- Main Div Start -->
+        <div class="container">
+            <h2>Currency Converter</h2>
+            <!-- Form Start -->
+            <form>
+                <div class="amount">
+                    <p>Enter Amount</p>
+                    <input value="1" type="text"/>
+                </div>
+                <!-- Dropdown -->
+                <div class="dropdown">
+                    <!-- From -->
+                    <div class="from">
+                        <p>From</p>
+                        <div class="select-container">
+                            <img src="https://flagsapi.com/US/flat/64.png">
+                            <select name="from">
+                            </select>
+                        </div>
+                    </div>
+                    <!-- From Close -->
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    <!-- To -->
+                    <div class="to">
+                        <p>To</p>
+                        <div class="select-container">
+                            <img src="https://flagsapi.com/BD/flat/64.png">
+                            <select name="to"></select>
+                        </div>
+                    </div>
+                    <!-- To Close -->
+                </div>
+                <!-- Dropdown Close -->
+                <div class="msg">1 USD = 121 BDT</div>
+                <button>Get Exchange Rate</button>
+            </form>
+            <!-- Form Close -->
+        </div>
+        <!-- Main Div Close -->
+<script src="CurrencyCodes.js"></script>
+<script src="Currency.js"></script>
+</body>
+</html>
